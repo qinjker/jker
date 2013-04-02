@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
-		<meta charset=utf-8 />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>
 			{% if page.title %} {{ page.title }} | {% endif %} John Doe, Photographer
 		</title>
 		<link rel="stylesheet" href="stylesheets/stylesheet.css" />
 		<link rel="stylesheet" href="stylesheets/pygment_trac.css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascripts/script.js"></script>
 	</head>
 
 	<body>
-		<div id="main">
-			<header>
-				<h1>
-					Qinjker Blog
-				</h1>
+		
+		<div class="wrapper">
 				<header>
-					<nav role="navigation">
-						<ul>
-							<li>
-								<a href="/jker"> Home </a>
-							</li>
-							<li>
-								<a href="/portfolio/"> Portfolio </a>
-							</li>
-							<li>
-								<a href="/about"> About </a>
-							</li>
-							<li>
-								<a href="/contact"> Contact </a>
-							</li>
-						</ul>
-					</nav>
-					{{ content }}
-					<footer>
-						<p>
-							@copy; John Doe Photography 2011 | All Rights Reserved.
-						</p>
-					</footer>
-		</div>
-	</body>
+					<h1 class="title">Qinjker Blog</h1>
+				</header>
+				<div id="container">
+					<p class="tagline">home</p>
+					<div id="main" role="main">
+						<div class="download-bar">
+						<div class="inner">
+							<a href="" class="download-button tar"><span>文章</span></a>
+							```
+								post.each
+							```
+						</div>
+						<span class="blc"></span><span class="trc"></span>
+						</div>
+					<article class="markdown-body">
+						{{ content }}
+					</article>
+					</div>
+				</div>
+				
+				<footer>
+					<div class="owner">
+					<p><a href="https://github.com/jkerqin" class="avatar"><img src="https://secure.gravatar.com/avatar/98b8002d0659986a4035c0b467537820?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/jkerqin">jkerqin</a> maintains <a href="https://github.com/jkerqin/demo">Demo</a></p>
+		
+		
+					</div>
+					<div class="creds">
+						<small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+					</div>
+				</footer>
+			</div>
+			<div class="current-section">
+				<a href="#top">Scroll to top</a>
+				<a href="https://github.com/jkerqin/demo/tarball/master" class="tar">tar</a><a href="https://github.com/jkerqin/demo/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+				<p class="name"></p>
+			</div>
+</body>
 
 </html>
